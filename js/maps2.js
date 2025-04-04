@@ -16,7 +16,7 @@ var googleSatellite = L.tileLayer("https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&
 });
 
 //servicios wms
-var url ="http://localhost:8080/geoserver/";
+var url ="http://192.168.226.43:8080/geoserver/";
 
 var municipios = L.tileLayer.wms(url+"visor_v1/wms?",
 	{layers: "Municipios 5050",
