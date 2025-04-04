@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Geoportal CNA</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Enlazar libreria Leaflet (css y js)-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  </head>
+  <body>
+    <div class="header-container">
+      <!-- Imagen izquierda -->
+      <img src="imagenes/bicentenario2.png" alt="Imagen izquierda">
+      <!-- Título -->
+      <h1>CENSO NACIONAL AGROPECUARIO 2025</h1>
+      <!-- Imagen derecha -->
+      <img src="imagenes/ine2.png" alt="Imagen derecha">
+    </div>
+    <div class="content-container">
+      <div class="side-menu">
+        <ul>
+          <li><a href="#" onclick="enlace(this,'02')">La Paz</a></li>
+          <li><a href="#" onclick="enlace(this,'03')">Cochabamba</a></li>
+          <li><a href="#" onclick="enlace(this,'07')">Santa Cruz</a></li>
+          <li><a href="#" onclick="enlace(this,'04')">Oruro</a></li>
+          <li><a href="#" onclick="enlace(this,'05')">Potosi</a></li>
+          <li><a href="#" onclick="enlace(this,'06')">Tarija</a></li>
+          <li><a href="#" onclick="enlace(this,'08')">Beni</a></li>
+          <li><a href="#" onclick="enlace(this,'09')">Pando</a></li>
+          <li><a href="#" onclick="enlace(this,'01')">Chuquisaca</a></li>
+        </ul>
+      </div>
+      <div id="map">
+        <script src="data/departamentos_0.js"></script>
+        <script type="text/javascript" src="js/maps2.js"></script>
+      </div>
+    </div>
+
+    <div class="bottom-left-image">
+        <img src="imagenes/leyenda2.png" alt="Logo">
+    </div>
+
+    <div class="bottom-left-button">
+    <a href="documentos/manual.pdf" target="_blank">
+        <button>Ver Reporte</button>
+    </a>
+</div>
+
+  </body>
+</html>
